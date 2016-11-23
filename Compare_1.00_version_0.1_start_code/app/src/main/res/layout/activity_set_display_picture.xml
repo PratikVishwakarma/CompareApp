@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_display_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.udacity.firebase.compareApp.ui.login.SetDisplayPictureActivity">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/text_set_display_picture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        style="@style/Widget.Udacity.Button.Login"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp">
+        <ImageView
+            android:id="@+id/image_view_show_display_pic"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#E0E0E0"
+            android:src="@drawable/default_profile" />
+        <ImageButton
+            android:id="@+id/image_button_set_display_pic"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_party_mode_white_18dp"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_done_with_display_picture"
+        style="@style/Widget.Udacity.Button.Login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_field_height"
+        android:layout_marginBottom="@dimen/lv_header_text_size"
+        android:background="@color/primary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onDonePressed"
+        android:text="@string/button_done"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
